@@ -1,0 +1,106 @@
+/* reset css */
+@import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
+
+h1,h2{
+    font-family: 'Zhi Mang Xing', cursive;
+    font-size: 40px;
+    
+}
+html{
+    font-size: 62.5%;
+    background: #222 url(https://i.imgur.com/HWu44Bv.png)no-repeat fixed center center / cover;
+    scroll-behavior: smooth;
+}
+body{
+    font: 1.5rem sans-serif;
+    margin: 0;
+}
+/* contexte css */
+h1,h2,ol,p{
+    font-weight: 100;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+/* theme css */
+
+
+:root {
+    --color-bg-default: #c0392b;
+    --color-link: #333;
+    --color-body: #fafafa;
+    --header-color: #3498db;
+
+}
+
+
+header, main{
+    max-width: 75rem;
+    border: 0.2rem solid transparent;
+    margin: 0 auto;
+    background-color: #fafafa;
+    
+}
+header{
+    margin: 2rem auto 5;
+    padding: .5rem;
+    text-align: center;
+}
+header h1::before{
+
+    vertical-align: 0rem;
+    margin-right:  0rem;
+    content:"\2605";/* icone unicode */
+    color: rgb(200, 0, 0);
+    font-size: 40px;
+    
+}
+main{
+    padding: .5rem;
+}
+ ol{
+    padding-left: 3.0rem;
+    margin: 3.0rem 0;
+}
+ ol li{
+    text-transform: capitalize;
+    line-height: 2.5rem;
+}
+section h1, h2, nav h2{
+    position: sticky;
+    font-size: 25px;
+    top: 0;
+    background-color: var(--header-color);
+    line-height: 4.5rem;
+    text-transform: capitalize;
+    box-shadow: 0 .3rem 0 #ccc;
+    text-shadow: .1rem .1rem 0 #ccc;
+    color: #fafafa;
+    padding: .5rem;
+}
+/*pour les liens */
+section .history:target{
+    background-color: var(--color-bg-default);
+}
+section img{
+    display: block;
+    width: 100%;
+}
+section p{
+    line-height: 170%;
+    padding: 1rem;
+    min-height: 2.6rem;
+    text-align: justify
+}
+section .picture{
+    margin-bottom: .5rem;
+}
+main footer{
+    text-align: center;
+    text-transform: capitalize;
+    padding: .5rem;
+}
